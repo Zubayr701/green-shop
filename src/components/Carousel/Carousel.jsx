@@ -3,7 +3,7 @@ import img from "./../../../public/vaza.png"
 
 const Carousel = () => {
   return (
-    <div className="bg-gray-100  flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 rounded-lg">
+    <div className="bg-[#FBFBFB]  flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 rounded-lg">
       
       <div className="text-center lg:text-left max-w-lg">
         <p className="text-gray-500 uppercase tracking-widest font-medium">
