@@ -1,8 +1,9 @@
-  import React from 'react'
-  
-  const Payment = () => {
-    return (
-        <div className="bg-white p-6 rounded-lg border mb-2">
+import React from 'react'
+import { NavLink } from 'react-router-dom';
+
+const Payment = () => {
+  return (
+    <div className="bg-white p-6 rounded-lg border mb-2">
       <h2 className="text-lg font-semibold mb-4">Payment Method</h2>
       <div className="space-y-2">
         <div className="flex items-center">
@@ -18,13 +19,17 @@
           <label htmlFor="cash">Cash on Delivery</label>
         </div>
       </div>
-
-      <button className="w-full bg-green-600 text-white font-bold py-2 rounded-lg mt-4 hover:bg-green-700">
+      <NavLink to="/order-modal"
+        className="inline-block w-full text-center pt-[10px] pb-[10px] rounded-lg bg-green-600 text-white font-bold mt-4 hover:bg-green-700 custom-style"
+      >
         Place Order
-      </button>
+      </NavLink>
+
+
+
+
     </div>
-    )
-  }
-  
-  export default Payment;
-  
+  )
+}
+
+export default Payment;

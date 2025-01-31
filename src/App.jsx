@@ -12,8 +12,7 @@ import Description from "./components/Description/Description";
 import ShopCard from "./pages/ShopCard/ShopCard";
 import { API } from "./utils/config";
 import Checkout from "./pages/Checkout/Checkout";
-
-
+import OrderModal from "./components/OrderModal/OrderModal";
 function App() {
 
   const router = createBrowserRouter([
@@ -67,10 +66,16 @@ function App() {
       element: <Checkout />,
     },
 
+    {
+      path: "/order-modal",
+      element: <OrderModal />,
+    },
+
   ]);
   return (
     <>
       <RouterProvider router={router} />
+      
     </>
   );
 }
